@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Howiya - Fashion Collection</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&family=Cairo:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <img src="logos/BNG-24.png" alt="Howiya Logo">
+            </div>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link" data-en="Home" data-ar="الرئيسية">Home</a></li>
+                <li><a href="#collection" class="nav-link" data-en="Collection" data-ar="المجموعة">Collection</a></li>
+                <li><a href="#about" class="nav-link" data-en="About" data-ar="من نحن">About</a></li>
+                <li><a href="#contact" class="nav-link" data-en="Contact" data-ar="تواصل معنا">Contact</a></li>
+            </ul>
+            <div class="language-switcher">
+                <button class="lang-btn active" data-lang="en">EN</button>
+                <button class="lang-btn" data-lang="ar">AR</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section with Video Background -->
+    <section id="home" class="hero">
+        <div class="video-container">
+            <video id="hero-video" autoplay muted loop playsinline>
+                <source src="video/FINAL 2_1.mp4#t=21" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="video-overlay"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-logo">
+                <img src="logos/Asset 1.svg" alt="Howiya Logo">
+            </div>
+            <a href="#collection" class="cta-button" data-en="Explore Collection" data-ar="استكشف المجموعة">Explore Collection</a>
+        </div>
+        <div class="scroll-indicator">
+            <span></span>
+        </div>
+    </section>
+
+    <!-- Collection Section -->
+    <section id="collection" class="collection">
+        <div class="container">
+            <h2 class="section-title" data-en="Our Collection" data-ar="مجموعتنا">Our Collection</h2>
+            <p class="section-subtitle" data-en="Curated pieces for the modern wardrobe" data-ar="قطع منتقاة للخزانة العصرية">Curated pieces for the modern wardrobe</p>
+
+            <div class="collection-grid">
+                <!-- Product 1 -->
+                <div class="product-card" data-product="1">
+                    <div class="product-image-gallery">
+                        <img src="Produact 1/black/1.jpeg" alt="Product 1" class="product-img-active">
+                        <div class="product-thumbnails">
+                            <img src="Produact 1/black/1.jpeg" alt="Black 1" class="thumbnail active" data-color="black" data-img="Produact 1/black/1.jpeg">
+                            <img src="Produact 1/black/2.jpeg" alt="Black 2" class="thumbnail" data-color="black" data-img="Produact 1/black/2.jpeg">
+                            <img src="Produact 1/White/3.jpeg" alt="White 1" class="thumbnail" data-color="white" data-img="Produact 1/White/3.jpeg">
+                            <img src="Produact 1/White/4.jpeg" alt="White 2" class="thumbnail" data-color="white" data-img="Produact 1/White/4.jpeg">
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name" data-en="Hodi" data-ar="هودي">Hodi</h3>
+                        <p class="product-price">
+                            <span class="price-amount" data-eur="32" data-egp="1750">€32 / 1750 EGP</span>
+                        </p>
+
+                        <div class="product-options">
+                            <div class="option-group">
+                                <label class="option-label" data-en="Color:" data-ar="اللون:">Color:</label>
+                                <div class="color-selector">
+                                    <button class="color-btn active" data-color="black" title="Black">
+                                        <span class="color-swatch" style="background: #000;"></span>
+                                    </button>
+                                    <button class="color-btn" data-color="white" title="White">
+                                        <span class="color-swatch" style="background: #fff; border: 1px solid #ddd;"></span>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div class="option-group">
+                                <label class="option-label" data-en="Size:" data-ar="المقاس:">Size:</label>
+                                <div class="size-selector">
+                                    <button class="size-btn active" data-size="1">
+                                        <span class="size-label" data-en="Size 1" data-ar="مقاس 1">Size 1</span>
+                                        <span class="size-fit" data-en="(S-M)" data-ar="(S-M)">(S-M)</span>
+                                    </button>
+                                    <button class="size-btn" data-size="2">
+                                        <span class="size-label" data-en="Size 2" data-ar="مقاس 2">Size 2</span>
+                                        <span class="size-fit" data-en="(L-XL)" data-ar="(L-XL)">(L-XL)</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <button class="add-to-cart" data-en="Order Online" data-ar="اطلب الآن">Order Online</button>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="product-card" data-product="2">
+                    <div class="product-image-gallery">
+                        <img src="produact 2/black/9.png" alt="Product 2" class="product-img-active">
+                        <div class="product-thumbnails">
+                            <img src="produact 2/black/9.png" alt="Black" class="thumbnail active" data-color="black" data-img="produact 2/black/9.png">
+                            <img src="produact 2/white/5.jpeg" alt="White 1" class="thumbnail" data-color="white" data-img="produact 2/white/5.jpeg">
+                            <img src="produact 2/white/6.jpeg" alt="White 2" class="thumbnail" data-color="white" data-img="produact 2/white/6.jpeg">
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name" data-en="Bantalon" data-ar="بنطلون">Bantalon</h3>
+                        <p class="product-price">
+                            <span class="price-amount" data-eur="23" data-egp="1250">€23 / 1250 EGP</span>
+                        </p>
+
+                        <div class="product-options">
+                            <div class="option-group">
+                                <label class="option-label" data-en="Color:" data-ar="اللون:">Color:</label>
+                                <div class="color-selector">
+                                    <button class="color-btn active" data-color="black" title="Black">
+                                        <span class="color-swatch" style="background: #000;"></span>
+                                    </button>
+                                    <button class="color-btn" data-color="white" title="White">
+                                        <span class="color-swatch" style="background: #fff; border: 1px solid #ddd;"></span>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div class="option-group">
+                                <label class="option-label" data-en="Size:" data-ar="المقاس:">Size:</label>
+                                <div class="size-selector">
+                                    <button class="size-btn active" data-size="1">
+                                        <span class="size-label" data-en="Size 1" data-ar="مقاس 1">Size 1</span>
+                                        <span class="size-fit" data-en="(S-M)" data-ar="(S-M)">(S-M)</span>
+                                    </button>
+                                    <button class="size-btn" data-size="2">
+                                        <span class="size-label" data-en="Size 2" data-ar="مقاس 2">Size 2</span>
+                                        <span class="size-fit" data-en="(L-XL)" data-ar="(L-XL)">(L-XL)</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <button class="add-to-cart" data-en="Order Online" data-ar="اطلب الآن">Order Online</button>
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="product-card" data-product="3">
+                    <div class="product-image-gallery">
+                        <img src="Prudcot 3/black/11.png" alt="Product 3" class="product-img-active">
+                        <div class="product-thumbnails">
+                            <img src="Prudcot 3/black/11.png" alt="Black" class="thumbnail active" data-color="black" data-img="Prudcot 3/black/11.png">
+                            <img src="Prudcot 3/white/7.jpeg" alt="White" class="thumbnail" data-color="white" data-img="Prudcot 3/white/7.jpeg">
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name" data-en="Set" data-ar="طقم">Set</h3>
+                        <p class="product-price">
+                            <span class="price-amount" data-eur="55" data-egp="2800">€55 / 2800 EGP</span>
+                        </p>
+
+                        <div class="product-options">
+                            <div class="option-group">
+                                <label class="option-label" data-en="Color:" data-ar="اللون:">Color:</label>
+                                <div class="color-selector">
+                                    <button class="color-btn active" data-color="black" title="Black">
+                                        <span class="color-swatch" style="background: #000;"></span>
+                                    </button>
+                                    <button class="color-btn" data-color="white" title="White">
+                                        <span class="color-swatch" style="background: #fff; border: 1px solid #ddd;"></span>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div class="option-group">
+                                <label class="option-label" data-en="Size:" data-ar="المقاس:">Size:</label>
+                                <div class="size-selector">
+                                    <button class="size-btn active" data-size="1">
+                                        <span class="size-label" data-en="Size 1" data-ar="مقاس 1">Size 1</span>
+                                        <span class="size-fit" data-en="(S-M)" data-ar="(S-M)">(S-M)</span>
+                                    </button>
+                                    <button class="size-btn" data-size="2">
+                                        <span class="size-label" data-en="Size 2" data-ar="مقاس 2">Size 2</span>
+                                        <span class="size-fit" data-en="(L-XL)" data-ar="(L-XL)">(L-XL)</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <button class="add-to-cart" data-en="Order Online" data-ar="اطلب الآن">Order Online</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2 class="section-title" data-en="About Howiya" data-ar="عن Howiya">About Howiya</h2>
+                    <div class="about-story">
+                        <p data-en="Howiya was born from a completely different idea:" data-ar="وُلدت Howiya من فكرة مختلفة تمامًا:">Howiya was born from a completely different idea:</p>
+                        <p data-en="What if clothing could be a way to discover identity… not just fashion?" data-ar="ماذا لو كانت الملابس وسيلة لاكتشاف الهوية… وليس مجرد موضة؟">What if clothing could be a way to discover identity… not just fashion?</p>
+
+                        <p data-en="The journey began in Egypt — a land of civilizations and rich details — where culture blends with history and handcrafted traditions passed down through generations. From the very beginning, the goal was clear: to create a brand that reflects the spirit of communities, carries people's stories, and transforms identity into something that can be worn." data-ar="بدأت الرحلة من مصر — أرض الحضارات والتفاصيل الغنية — حيث تمتزج الثقافة بالتاريخ والحرف اليدوية المتوارثة عبر الأجيال. كان الهدف واضحًا منذ البداية: إنشاء براند يعكس روح المجتمعات، ويحمل قصص الناس، ويحوّل الهوية إلى تصميم يمكن ارتداؤه.">The journey began in Egypt — a land of civilizations and rich details — where culture blends with history and handcrafted traditions passed down through generations. From the very beginning, the goal was clear: to create a brand that reflects the spirit of communities, carries people's stories, and transforms identity into something that can be worn.</p>
+
+                        <p data-en="The concept was never about simply drawing inspiration from heritage, but about reintroducing it through a contemporary language that fits today's world. Every piece is the result of deep exploration into culture, symbols, lifestyles, and traditional craftsmanship that holds real human value. We collaborate with artisans, explore manual techniques, and merge them with a modern design vision to create a balance between authenticity and evolution." data-ar="لم تكن الفكرة مجرد تصاميم مستوحاة من التراث، بل إعادة تقديمه بلغة معاصرة تناسب العالم اليوم. كل قطعة هي نتاج بحث في الثقافة، والرموز، والأنماط الحياتية، والحرف التقليدية التي تحمل قيمة إنسانية حقيقية. نعمل مع الحرفيين، نستكشف التقنيات اليدوية، ونمزجها مع رؤية تصميم حديثة لنخلق توازنًا بين الأصالة والتطور.">The concept was never about simply drawing inspiration from heritage, but about reintroducing it through a contemporary language that fits today's world. Every piece is the result of deep exploration into culture, symbols, lifestyles, and traditional craftsmanship that holds real human value. We collaborate with artisans, explore manual techniques, and merge them with a modern design vision to create a balance between authenticity and evolution.</p>
+
+                        <p data-en="Our journey to Europe is not just a geographical expansion, but a step toward sharing Egyptian culture with the world, and redefining fashion as a tool for cultural connection." data-ar="رحلتنا إلى أوروبا ليست مجرد توسّع جغرافي، بل خطوة نحو مشاركة الثقافة المصرية مع العالم، وإعادة تعريف مفهوم الموضة كأداة للتواصل الثقافي.">Our journey to Europe is not just a geographical expansion, but a step toward sharing Egyptian culture with the world, and redefining fashion as a tool for cultural connection.</p>
+
+                        <p class="about-tagline" data-en="We don't just create clothing." data-ar="نحن لا نصنع ملابس فقط."><strong>We don't just create clothing.</strong></p>
+                        <p class="about-tagline" data-en="We create a sense of belonging." data-ar="نحن نصنع شعور الانتماء."><strong>We create a sense of belonging.</strong></p>
+                        <p class="about-tagline" data-en="We create a story you can wear." data-ar="نصنع قصة يمكن ارتداؤها"><strong>We create a story you can wear.</strong></p>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="logos/BNG-2.png" alt="Howiya Brand">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title" data-en="Get In Touch" data-ar="تواصل معنا">Get In Touch</h2>
+            <p class="section-subtitle" data-en="We'd love to hear from you" data-ar="نحب أن نسمع منك">We'd love to hear from you</p>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <h3 data-en="WhatsApp" data-ar="واتساب">WhatsApp</h3>
+                    <a href="https://wa.me/201156888796" class="contact-link" target="_blank">+20 11 56888796</a>
+                </div>
+                <div class="contact-item">
+                    <h3 data-en="Instagram" data-ar="انستغرام">Instagram</h3>
+                    <a href="https://www.instagram.com/howiyacouture?igsh=MTBmOWdjOW12YndqcQ%3D%3D" class="contact-link" target="_blank">@howiyacouture</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p data-en="&copy; 2026 Howiya. All rights reserved." data-ar="&copy; 2026 Howiya. جميع الحقوق محفوظة.">&copy; 2026 Howiya. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
